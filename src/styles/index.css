@@ -1,12 +1,81 @@
+*::before,
+*::after,
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
-/* 
+body {
+  display: flex;
+  justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+#app {
+  display: flex;
+  width: 500px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 80px;
+  border: 40px solid black;
+}
 
-*/
+.digits {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.counter {
+  display: flex;
+  width: auto;
+  font-size: 100px;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 40px 40px 0 0;
+  background-color: rgb(90, 87, 87);
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+}
+
+.play {
+  color: green;
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 0 40px 0 0;
+}
+
+.stop {
+  color: red;
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid white;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.start {
+  border-radius: 0 0 40px 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
